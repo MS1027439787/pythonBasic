@@ -3,4 +3,5 @@ last_name = "lovelace"
 full_name = first_name + " " + last_name
 
 message = "Hello, " + full_name.title() + "!"
-print(message)
+message = "i love you"
+print(message.title())
