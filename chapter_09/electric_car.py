@@ -24,14 +24,10 @@ class Battery():
         message += " miles on a full charge."
         print(message)
     
-        
+# 将实例作为属性
 class ElectricCar(Car):
-    """Models aspects of a car, specific to electric vehicles."""
-
     def __init__(self, manufacturer, model, year):
-        """
-        Initialize attributes of the parent class.
-        Then initialize attributes specific to an electric car.
-        """
+        # 初始化方法要借助父类的初始化方法
         super().__init__(manufacturer, model, year)
+        # 将实例作为属性
         self.battery = Battery()
