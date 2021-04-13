@@ -1,5 +1,5 @@
 """A class that can be used to represent a car."""
-
+print("hello, world")
 class Car():
     """A simple attempt to represent a car."""
 
