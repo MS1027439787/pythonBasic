@@ -6,8 +6,20 @@ sys.path.append('../../')
 print(sys.path)
 
 # json.dumps函数,字典转换为字符串
-a = {'name': 'wang', 'age': 29}
-print(a), print(type(a))
+a = '[{"namae":"李四","height":180}, {"namae":"张三","height":190}]'
+list = []
+if a is not None:
+    for ele in json.loads(a):
+        print(ele)
+        list.append(json.dumps(ele))
+
+str = '{"name":"张三","height":180}'
+print(str), print(type(str))
+
+# json.loads函数,将字符串加载为字典
+c = json.loads(str)
+print(c), print(type(c))
+
 b = json.dumps(a)
 print(b), print(type(b))
 
@@ -37,4 +49,3 @@ print(time)
 
 time = datetime.datetime.now().date()
 print(time)
-
