@@ -32,6 +32,8 @@ time = datetime.datetime.now()
 # 2021-04-16 11:40:12.850365
 print(time)
 
+
+
 day = datetime.date.today()
 # 2021-04-16
 print(day)
