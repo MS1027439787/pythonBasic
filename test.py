@@ -32,8 +32,6 @@ time = datetime.datetime.now()
 # 2021-04-16 11:40:12.850365
 print(time)
 
-
-
 day = datetime.date.today()
 # 2021-04-16
 print(day)
@@ -51,3 +49,14 @@ print(time)
 
 time = datetime.datetime.now().date()
 print(time)
+
+# 写法等价
+if not "hello" in "hello world":
+    print("not in")
+else:
+    print("in")
+
+if "hello" not in "hello world":
+    print("not in")
+else:
+    print("in")
