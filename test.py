@@ -51,7 +51,7 @@ time = datetime.datetime.now().date()
 print(time)
 
 # 写法等价
-if not "hello" in "hello world":
+if not ("hello" in "hello world"):
     print("not in")
 else:
     print("in")
@@ -60,3 +60,9 @@ if "hello" not in "hello world":
     print("not in")
 else:
     print("in")
+
+list = ["hello", "world"]
+print(list[0][0])
+
+str = "helloworld"
+print(str[0])
